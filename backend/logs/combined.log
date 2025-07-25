@@ -1,0 +1,138 @@
+[2025-07-25T10:18:15.816Z] INFO: Connecting to PostgreSQL...
+[2025-07-25T10:18:15.931Z] ERROR: Database connection failed: "password authentication failed for user \"postgres\""
+[2025-07-25T10:18:15.932Z] ERROR: Failed to start server: {"length":104,"name":"error","severity":"FATAL","code":"28P01","file":"auth.c","line":"324","routine":"auth_failed"}
+[2025-07-25T10:22:12.867Z] INFO: Connecting to PostgreSQL...
+[2025-07-25T10:22:12.927Z] INFO: Database connected successfully: {"now":"2025-07-25T10:22:12.925Z"}
+[2025-07-25T10:22:12.939Z] ERROR: Database initialization failed: "column \"is_active\" does not exist"
+[2025-07-25T10:22:12.940Z] ERROR: Failed to start server: {"length":99,"name":"error","severity":"ERROR","code":"42703","file":"indexcmds.c","line":"1891","routine":"ComputeIndexAttrs"}
+[2025-07-25T10:23:37.398Z] INFO: Connecting to PostgreSQL...
+[2025-07-25T10:23:37.615Z] INFO: Database connected successfully: {"now":"2025-07-25T10:23:37.612Z"}
+[2025-07-25T10:23:37.630Z] ERROR: Database initialization failed: "column \"is_active\" does not exist"
+[2025-07-25T10:23:37.633Z] ERROR: Failed to start server: {"length":99,"name":"error","severity":"ERROR","code":"42703","file":"indexcmds.c","line":"1891","routine":"ComputeIndexAttrs"}
+[2025-07-25T10:40:12.333Z] INFO: Connecting to PostgreSQL...
+[2025-07-25T10:40:12.390Z] INFO: Database connected successfully: {"now":"2025-07-25T10:40:12.389Z"}
+[2025-07-25T10:40:12.395Z] ERROR: Database initialization failed: "column \"is_active\" does not exist"
+[2025-07-25T10:40:12.396Z] ERROR: Failed to start server: {"length":99,"name":"error","severity":"ERROR","code":"42703","file":"indexcmds.c","line":"1891","routine":"ComputeIndexAttrs"}
+[2025-07-25T10:41:38.181Z] INFO: Connecting to PostgreSQL...
+[2025-07-25T10:41:38.237Z] INFO: Database connected successfully: {"now":"2025-07-25T10:41:38.235Z"}
+[2025-07-25T10:41:38.240Z] INFO: Database tables initialized successfully
+[2025-07-25T10:41:38.241Z] INFO: PostgreSQL connected successfully
+[2025-07-25T10:41:38.242Z] INFO: Connecting to Redis...
+[2025-07-25T10:41:38.248Z] INFO: Redis client connected
+[2025-07-25T10:41:38.254Z] INFO: Redis client ready
+[2025-07-25T10:41:38.257Z] INFO: Redis connection established successfully
+[2025-07-25T10:41:38.258Z] INFO: Redis connected successfully
+[2025-07-25T10:41:38.264Z] INFO: 🚀 SwiftURL Backend Server running on port 5000
+[2025-07-25T10:41:38.265Z] INFO: Environment: development
+[2025-07-25T10:41:38.266Z] INFO: Health check available at: http://localhost:5000/health
+[2025-07-25T10:43:08.795Z] INFO: SIGINT received, shutting down gracefully...
+[2025-07-25T10:43:17.128Z] INFO: Connecting to PostgreSQL...
+[2025-07-25T10:43:17.179Z] INFO: Database connected successfully: {"now":"2025-07-25T10:43:17.178Z"}
+[2025-07-25T10:43:17.183Z] INFO: Database tables initialized successfully
+[2025-07-25T10:43:17.183Z] INFO: PostgreSQL connected successfully
+[2025-07-25T10:43:17.184Z] INFO: Connecting to Redis...
+[2025-07-25T10:43:17.190Z] INFO: Redis client connected
+[2025-07-25T10:43:17.196Z] INFO: Redis client ready
+[2025-07-25T10:43:17.201Z] INFO: Redis connection established successfully
+[2025-07-25T10:43:17.202Z] INFO: Redis connected successfully
+[2025-07-25T10:43:17.210Z] INFO: 🚀 SwiftURL Backend Server running on port 5000
+[2025-07-25T10:43:17.211Z] INFO: Environment: development
+[2025-07-25T10:43:17.211Z] INFO: Health check available at: http://localhost:5000/health
+[2025-07-25T10:58:42.249Z] DEBUG: Rate limit check passed for IP: ::1, remaining: 9
+[2025-07-25T11:00:02.768Z] DEBUG: Rate limit check passed for IP: ::1, remaining: 9
+[2025-07-25T11:00:02.783Z] INFO: Creating short URL: {"longUrl":"https://docs.google.com/document/d/1btTGiB0dP75SCxo9nwtjbuJA1jGAbR24CSyC6teQ6qA/edit?tab=t.0"}
+[2025-07-25T11:00:02.833Z] DEBUG: Executed query {"text":"SELECT id FROM urls WHERE short_code = $1","duration":48,"rows":0}
+[2025-07-25T11:00:02.838Z] DEBUG: Executed query {"text":"\n      INSERT INTO urls (long_url, short_code, expires_at)\n      VALUES ($1, $2, $3)\n      RETURNING id, long_url, short_code, clicks, created_at, expires_at\n    ","duration":5,"rows":1}
+[2025-07-25T11:00:02.841Z] DEBUG: Cached URL for short code: vgf3C3
+[2025-07-25T11:00:02.842Z] INFO: Created short URL: vgf3C3 -> https://docs.google.com/document/d/1btTGiB0dP75SCxo9nwtjbuJA1jGAbR24CSyC6teQ6qA/edit?tab=t.0
+[2025-07-25T11:02:30.189Z] INFO: SIGINT received, shutting down gracefully...
+[2025-07-25T11:03:01.680Z] INFO: Connecting to PostgreSQL...
+[2025-07-25T11:03:01.735Z] INFO: Database connected successfully: {"now":"2025-07-25T11:03:01.733Z"}
+[2025-07-25T11:03:01.740Z] INFO: Database tables initialized successfully
+[2025-07-25T11:03:01.741Z] INFO: PostgreSQL connected successfully
+[2025-07-25T11:03:01.742Z] INFO: Connecting to Redis...
+[2025-07-25T11:03:01.749Z] INFO: Redis client connected
+[2025-07-25T11:03:01.754Z] INFO: Redis client ready
+[2025-07-25T11:03:01.758Z] INFO: Redis connection established successfully
+[2025-07-25T11:03:01.759Z] INFO: Redis connected successfully
+[2025-07-25T11:03:01.768Z] INFO: 🚀 SwiftURL Backend Server running on port 5000
+[2025-07-25T11:03:01.770Z] INFO: Environment: development
+[2025-07-25T11:03:01.772Z] INFO: Health check available at: http://localhost:5000/health
+[2025-07-25T11:03:12.342Z] DEBUG: Rate limit check passed for IP: ::1, remaining: 9
+[2025-07-25T11:03:12.353Z] INFO: Creating short URL: {"longUrl":"https://docs.google.com/document/d/1btTGiB0dP75SCxo9nwtjbuJA1jGAbR24CSyC6teQ6qA/edit?tab=t.0"}
+[2025-07-25T11:03:12.359Z] DEBUG: Executed query {"text":"SELECT id FROM urls WHERE short_code = $1","duration":3,"rows":0}
+[2025-07-25T11:03:12.362Z] DEBUG: Executed query {"text":"\n      INSERT INTO urls (long_url, short_code, expires_at)\n      VALUES ($1, $2, $3)\n      RETURNING id, long_url, short_code, clicks, created_at, expires_at\n    ","duration":1,"rows":1}
+[2025-07-25T11:03:12.364Z] DEBUG: Cached URL for short code: N0105Z
+[2025-07-25T11:03:12.365Z] INFO: Created short URL: N0105Z -> https://docs.google.com/document/d/1btTGiB0dP75SCxo9nwtjbuJA1jGAbR24CSyC6teQ6qA/edit?tab=t.0
+[2025-07-25T11:03:16.247Z] INFO: Redirecting short code: "N0105Z"
+[2025-07-25T11:03:16.249Z] DEBUG: Cache hit for short code: N0105Z
+[2025-07-25T11:03:16.251Z] INFO: Redirecting N0105Z to https://docs.google.com/document/d/1btTGiB0dP75SCxo9nwtjbuJA1jGAbR24CSyC6teQ6qA/edit?tab=t.0
+[2025-07-25T11:03:16.263Z] DEBUG: Incremented click count for: N0105Z
+[2025-07-25T11:03:16.271Z] DEBUG: Executed query {"text":"UPDATE urls SET clicks = clicks + 1 WHERE short_code = $1","duration":6,"rows":1}
+[2025-07-25T11:03:35.382Z] INFO: Redirecting short code: "N0105Z"
+[2025-07-25T11:03:35.385Z] DEBUG: Cache hit for short code: N0105Z
+[2025-07-25T11:03:35.386Z] INFO: Redirecting N0105Z to https://docs.google.com/document/d/1btTGiB0dP75SCxo9nwtjbuJA1jGAbR24CSyC6teQ6qA/edit?tab=t.0
+[2025-07-25T11:03:35.391Z] DEBUG: Incremented click count for: N0105Z
+[2025-07-25T11:03:35.393Z] DEBUG: Executed query {"text":"UPDATE urls SET clicks = clicks + 1 WHERE short_code = $1","duration":1,"rows":1}
+[2025-07-25T11:03:59.952Z] DEBUG: Rate limit check passed for IP: ::1, remaining: 8
+[2025-07-25T11:03:59.956Z] ERROR: Error occurred: {"message":"Validation Error","stack":"ValidationError: Validation Error\n    at C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\validators\\urlValidator.js:95:31\n    at Layer.handle [as handle_request] (C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\node_modules\\express\\lib\\router\\index.js:284:15\n    at param (C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\node_modules\\express\\lib\\router\\index.js:421:3)\n    at next (C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)","url":"/api/stats/httplocalhost500","method":"GET","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-25T11:04:06.772Z] DEBUG: Rate limit check passed for IP: ::1, remaining: 7
+[2025-07-25T11:04:06.777Z] INFO: Creating short URL: {"longUrl":"https://docs.google.com/document/d/1btTGiB0dP75SCxo9nwtjbuJA1jGAbR24CSyC6teQ6qA/edit?tab=t.0"}
+[2025-07-25T11:04:06.824Z] DEBUG: Executed query {"text":"SELECT id FROM urls WHERE short_code = $1","duration":45,"rows":0}
+[2025-07-25T11:04:06.829Z] DEBUG: Executed query {"text":"\n      INSERT INTO urls (long_url, short_code, expires_at)\n      VALUES ($1, $2, $3)\n      RETURNING id, long_url, short_code, clicks, created_at, expires_at\n    ","duration":4,"rows":1}
+[2025-07-25T11:04:06.833Z] DEBUG: Cached URL for short code: R3Tdbu
+[2025-07-25T11:04:06.833Z] INFO: Created short URL: R3Tdbu -> https://docs.google.com/document/d/1btTGiB0dP75SCxo9nwtjbuJA1jGAbR24CSyC6teQ6qA/edit?tab=t.0
+[2025-07-25T11:04:16.457Z] DEBUG: Rate limit check passed for IP: ::1, remaining: 9
+[2025-07-25T11:04:16.459Z] INFO: Getting stats for short code: "R3Tdbu"
+[2025-07-25T11:04:16.461Z] DEBUG: Executed query {"text":"SELECT short_code, long_url, clicks, created_at, expires_at FROM urls WHERE short_code = $1","duration":1,"rows":1}
+[2025-07-25T11:04:41.753Z] DEBUG: Rate limit check passed for IP: ::1, remaining: 8
+[2025-07-25T11:04:41.755Z] INFO: Creating short URL: {"longUrl":"https://docs.google.com/document/d/1btTGiB0dP75SCxo9nwtjbuJA1jGAbR24CSyC6teQ6qA/edit?tab=t.0","customCode":"yoooooo","expiresAt":"2025-07-26T13:04:00.000Z"}
+[2025-07-25T11:04:41.757Z] DEBUG: Executed query {"text":"SELECT id FROM urls WHERE short_code = $1","duration":2,"rows":0}
+[2025-07-25T11:04:41.770Z] DEBUG: Executed query {"text":"\n      INSERT INTO urls (long_url, short_code, expires_at)\n      VALUES ($1, $2, $3)\n      RETURNING id, long_url, short_code, clicks, created_at, expires_at\n    ","duration":12,"rows":1}
+[2025-07-25T11:04:41.772Z] DEBUG: Cached URL for short code: yoooooo
+[2025-07-25T11:04:41.773Z] INFO: Created short URL: yoooooo -> https://docs.google.com/document/d/1btTGiB0dP75SCxo9nwtjbuJA1jGAbR24CSyC6teQ6qA/edit?tab=t.0
+[2025-07-25T11:05:09.592Z] DEBUG: Rate limit check passed for IP: ::1, remaining: 7
+[2025-07-25T11:05:09.594Z] INFO: Creating short URL: {"longUrl":"https://github.com/copilot/c/61a04a63-c4ff-46c8-83e4-486d4ca92cd6","customCode":"yoooooo"}
+[2025-07-25T11:05:09.595Z] DEBUG: Executed query {"text":"SELECT id FROM urls WHERE short_code = $1","duration":1,"rows":1}
+[2025-07-25T11:05:09.596Z] ERROR: Error creating short URL:
+[2025-07-25T11:05:09.598Z] ERROR: Error occurred: {"message":"CUSTOM_CODE_TAKEN","stack":"Error: CUSTOM_CODE_TAKEN\n    at Object.createShortUrl (C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\services\\urlService.js:52:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\routes\\urlRoutes.js:25:20","url":"/api/shorten","method":"POST","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-25T11:05:21.890Z] INFO: Redirecting short code: "yoooooo"
+[2025-07-25T11:05:21.893Z] DEBUG: Cache hit for short code: yoooooo
+[2025-07-25T11:05:21.894Z] INFO: Redirecting yoooooo to https://docs.google.com/document/d/1btTGiB0dP75SCxo9nwtjbuJA1jGAbR24CSyC6teQ6qA/edit?tab=t.0
+[2025-07-25T11:05:21.899Z] DEBUG: Incremented click count for: yoooooo
+[2025-07-25T11:05:21.902Z] DEBUG: Executed query {"text":"UPDATE urls SET clicks = clicks + 1 WHERE short_code = $1","duration":2,"rows":1}
+[2025-07-25T11:09:28.476Z] DEBUG: Rate limit check passed for IP: ::1, remaining: 9
+[2025-07-25T11:09:28.477Z] INFO: Creating short URL: {"longUrl":"https://www.youtube.com/watch?v=2iOCb11KO60","expiresAt":"2025-07-25T15:09:00.000Z"}
+[2025-07-25T11:09:28.516Z] DEBUG: Executed query {"text":"SELECT id FROM urls WHERE short_code = $1","duration":38,"rows":0}
+[2025-07-25T11:09:28.519Z] DEBUG: Executed query {"text":"\n      INSERT INTO urls (long_url, short_code, expires_at)\n      VALUES ($1, $2, $3)\n      RETURNING id, long_url, short_code, clicks, created_at, expires_at\n    ","duration":1,"rows":1}
+[2025-07-25T11:09:28.520Z] DEBUG: Cached URL for short code: naS32i
+[2025-07-25T11:09:28.521Z] INFO: Created short URL: naS32i -> https://www.youtube.com/watch?v=2iOCb11KO60
+[2025-07-25T11:09:40.578Z] INFO: Redirecting short code: "naS32i"
+[2025-07-25T11:09:40.580Z] DEBUG: Cache hit for short code: naS32i
+[2025-07-25T11:09:40.581Z] INFO: Redirecting naS32i to https://www.youtube.com/watch?v=2iOCb11KO60
+[2025-07-25T11:09:40.587Z] DEBUG: Incremented click count for: naS32i
+[2025-07-25T11:09:40.590Z] DEBUG: Executed query {"text":"UPDATE urls SET clicks = clicks + 1 WHERE short_code = $1","duration":2,"rows":1}
+[2025-07-25T11:09:51.611Z] DEBUG: Rate limit check passed for IP: ::1, remaining: 8
+[2025-07-25T11:09:51.613Z] ERROR: Error occurred: {"message":"Validation Error","stack":"ValidationError: Validation Error\n    at C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\validators\\urlValidator.js:95:31\n    at Layer.handle [as handle_request] (C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\node_modules\\express\\lib\\router\\index.js:284:15\n    at param (C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\node_modules\\express\\lib\\router\\index.js:421:3)\n    at next (C:\\Users\\mycut\\OneDrive\\Desktop\\SwiftURL\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)","url":"/api/stats/httplocalhost500","method":"GET","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"}
+[2025-07-25T11:10:04.770Z] DEBUG: Rate limit check passed for IP: ::1, remaining: 7
+[2025-07-25T11:10:04.771Z] INFO: Getting stats for short code: "yoooooo"
+[2025-07-25T11:10:04.773Z] DEBUG: Executed query {"text":"SELECT short_code, long_url, clicks, created_at, expires_at FROM urls WHERE short_code = $1","duration":1,"rows":1}
+[2025-07-25T11:10:24.452Z] INFO: Redirecting short code: "naS32i"
+[2025-07-25T11:10:24.454Z] DEBUG: Cache hit for short code: naS32i
+[2025-07-25T11:10:24.455Z] INFO: Redirecting naS32i to https://www.youtube.com/watch?v=2iOCb11KO60
+[2025-07-25T11:10:24.460Z] DEBUG: Incremented click count for: naS32i
+[2025-07-25T11:10:24.463Z] DEBUG: Executed query {"text":"UPDATE urls SET clicks = clicks + 1 WHERE short_code = $1","duration":1,"rows":1}
+[2025-07-25T11:10:27.508Z] INFO: Redirecting short code: "naS32i"
+[2025-07-25T11:10:27.511Z] DEBUG: Cache hit for short code: naS32i
+[2025-07-25T11:10:27.512Z] INFO: Redirecting naS32i to https://www.youtube.com/watch?v=2iOCb11KO60
+[2025-07-25T11:10:27.518Z] DEBUG: Incremented click count for: naS32i
+[2025-07-25T11:10:27.522Z] DEBUG: Executed query {"text":"UPDATE urls SET clicks = clicks + 1 WHERE short_code = $1","duration":1,"rows":1}
+[2025-07-25T11:10:29.821Z] INFO: Redirecting short code: "naS32i"
+[2025-07-25T11:10:29.824Z] DEBUG: Cache hit for short code: naS32i
+[2025-07-25T11:10:29.825Z] INFO: Redirecting naS32i to https://www.youtube.com/watch?v=2iOCb11KO60
+[2025-07-25T11:10:29.829Z] DEBUG: Incremented click count for: naS32i
+[2025-07-25T11:10:29.835Z] DEBUG: Executed query {"text":"UPDATE urls SET clicks = clicks + 1 WHERE short_code = $1","duration":2,"rows":1}
+[2025-07-25T11:10:46.786Z] DEBUG: Rate limit check passed for IP: ::1, remaining: 9
+[2025-07-25T11:10:46.788Z] INFO: Getting stats for short code: "naS32i"
+[2025-07-25T11:10:46.790Z] DEBUG: Executed query {"text":"SELECT short_code, long_url, clicks, created_at, expires_at FROM urls WHERE short_code = $1","duration":1,"rows":1}
+[2025-07-25T11:12:16.605Z] INFO: SIGINT received, shutting down gracefully...
