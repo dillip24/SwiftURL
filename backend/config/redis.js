@@ -13,13 +13,23 @@ let redisClient;
  */
 async function connectRedis() {
   try {
-    redisClient = redis.createClient({
-      socket: {
-        host: process.env.REDIS_HOST || 'localhost',
-        port: process.env.REDIS_PORT || 6379,
-      },
-      password: process.env.REDIS_PASSWORD || undefined,
-    });
+    // Use REDIS_URL if available (Railway, Heroku, etc.)
+    const redisUrl = process.env.REDIS_URL;
+    
+    if (redisUrl) {
+      redisClient = redis.createClient({
+        url: redisUrl,
+      });
+    } else {
+      // Fallback to individual environment variables
+      redisClient = redis.createClient({
+        socket: {
+          host: process.env.REDIS_HOST || 'localhost',
+          port: process.env.REDIS_PORT || 6379,
+        },
+        password: process.env.REDIS_PASSWORD || undefined,
+      });
+    }
 
     redisClient.on('error', (err) => {
       logger.error('Redis Client Error:', err);
